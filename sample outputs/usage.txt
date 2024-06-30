@@ -1,0 +1,559 @@
+kali㉿Kali)-[~]
+└─$ python                
+Python 3.11.6 (main, Oct  8 2023, 05:06:43) [GCC 13.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+zsh: suspended  python
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~]
+└─$ pip install venv      
+Defaulting to user installation because normal site-packages is not writeable
+ERROR: Could not find a version that satisfies the requirement venv (from versions: none)
+ERROR: No matching distribution found for venv
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~]
+└─$ pip install virtualenv
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: virtualenv in /usr/lib/python3/dist-packages (20.24.6+ds)
+Requirement already satisfied: distlib<1,>=0.3.7 in /usr/lib/python3/dist-packages (from virtualenv) (0.3.7)
+Requirement already satisfied: filelock<4,>=3.12.2 in /usr/lib/python3/dist-packages (from virtualenv) (3.12.4)
+Requirement already satisfied: platformdirs<5,>=3.9.1 in /usr/lib/python3/dist-packages (from virtualenv) (4.0.0)
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~]
+└─$ cd Documents 
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents]
+└─$ cd COP\ 290\ subtask\ 1
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ ls
+DeepSpeech  deepspeech-0.9.3-models.pbmm  main.py  sample.mp3  sample.mp4  sample.wav
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ rm -f DeepSpeech
+rm: cannot remove 'DeepSpeech': Is a directory
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ virtualenv venv
+created virtual environment CPython3.11.6.final.0-64 in 129ms
+  creator CPython3Posix(dest=/home/kali/Documents/COP 290 subtask 1/venv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/kali/.local/share/virtualenv)
+    added seed packages: pip==23.3, setuptools==68.1.2, wheel==0.41.2
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ ls
+main.py  sample.mp3  sample.mp4  sample.wav  venv
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ soursource venv/bin/activate
+                                                                                                                                                                       
+┌──(venv)─(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ ls
+main.py  sample.mp3  sample.mp4  sample.wav  venv
+                                                                                                                                                                       
+┌──(venv)─(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ pip install deepspeech
+ERROR: Could not find a version that satisfies the requirement deepspeech (from versions: none)
+ERROR: No matching distribution found for deepspeech                                                                                                                   
+                                                                                                                                                                       
+┌──(venv)─(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ python -v             
+import _frozen_importlib # frozen
+import _imp # builtin
+import '_thread' # <class '_frozen_importlib.BuiltinImporter'>
+import '_warnings' # <class '_frozen_importlib.BuiltinImporter'>
+import '_weakref' # <class '_frozen_importlib.BuiltinImporter'>
+import '_io' # <class '_frozen_importlib.BuiltinImporter'>
+import 'marshal' # <class '_frozen_importlib.BuiltinImporter'>
+import 'posix' # <class '_frozen_importlib.BuiltinImporter'>
+import '_frozen_importlib_external' # <class '_frozen_importlib.FrozenImporter'>
+# installing zipimport hook
+import 'time' # <class '_frozen_importlib.BuiltinImporter'>
+import 'zipimport' # <class '_frozen_importlib.FrozenImporter'>
+# installed zipimport hook
+# /usr/lib/python3.11/encodings/__pycache__/__init__.cpython-311.pyc matches /usr/lib/python3.11/encodings/__init__.py
+# code object from '/usr/lib/python3.11/encodings/__pycache__/__init__.cpython-311.pyc'
+import '_codecs' # <class '_frozen_importlib.BuiltinImporter'>
+import 'codecs' # <class '_frozen_importlib.FrozenImporter'>
+# /usr/lib/python3.11/encodings/__pycache__/aliases.cpython-311.pyc matches /usr/lib/python3.11/encodings/aliases.py
+# code object from '/usr/lib/python3.11/encodings/__pycache__/aliases.cpython-311.pyc'
+import 'encodings.aliases' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2098245e90>
+import 'encodings' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2098236310>
+# /usr/lib/python3.11/encodings/__pycache__/utf_8.cpython-311.pyc matches /usr/lib/python3.11/encodings/utf_8.py
+# code object from '/usr/lib/python3.11/encodings/__pycache__/utf_8.cpython-311.pyc'
+import 'encodings.utf_8' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2098237c90>
+import '_signal' # <class '_frozen_importlib.BuiltinImporter'>
+import '_abc' # <class '_frozen_importlib.BuiltinImporter'>
+import 'abc' # <class '_frozen_importlib.FrozenImporter'>
+import 'io' # <class '_frozen_importlib.FrozenImporter'>
+import '_stat' # <class '_frozen_importlib.BuiltinImporter'>
+import 'stat' # <class '_frozen_importlib.FrozenImporter'>
+import '_collections_abc' # <class '_frozen_importlib.FrozenImporter'>
+import 'genericpath' # <class '_frozen_importlib.FrozenImporter'>
+import 'posixpath' # <class '_frozen_importlib.FrozenImporter'>
+import 'os' # <class '_frozen_importlib.FrozenImporter'>
+import '_sitebuiltins' # <class '_frozen_importlib.FrozenImporter'>
+Processing global site-packages
+Adding directory: '/home/kali/Documents/COP 290 subtask 1/venv/lib/python3.11/site-packages'
+Processing .pth file: '/home/kali/Documents/COP 290 subtask 1/venv/lib/python3.11/site-packages/_virtualenv.pth'
+# /home/kali/Documents/COP 290 subtask 1/venv/lib/python3.11/site-packages/__pycache__/_virtualenv.cpython-311.pyc matches /home/kali/Documents/COP 290 subtask 1/venv/lib/python3.11/site-packages/_virtualenv.py
+# code object from '/home/kali/Documents/COP 290 subtask 1/venv/lib/python3.11/site-packages/__pycache__/_virtualenv.cpython-311.pyc'
+# /usr/lib/python3.11/__pycache__/__future__.cpython-311.pyc matches /usr/lib/python3.11/__future__.py
+# code object from '/usr/lib/python3.11/__pycache__/__future__.cpython-311.pyc'
+import '__future__' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097d19310>
+# /usr/lib/python3.11/__pycache__/contextlib.cpython-311.pyc matches /usr/lib/python3.11/contextlib.py
+# code object from '/usr/lib/python3.11/__pycache__/contextlib.cpython-311.pyc'
+# /usr/lib/python3.11/collections/__pycache__/__init__.cpython-311.pyc matches /usr/lib/python3.11/collections/__init__.py
+# code object from '/usr/lib/python3.11/collections/__pycache__/__init__.cpython-311.pyc'
+import 'itertools' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python3.11/__pycache__/keyword.cpython-311.pyc matches /usr/lib/python3.11/keyword.py
+# code object from '/usr/lib/python3.11/__pycache__/keyword.cpython-311.pyc'
+import 'keyword' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097d43690>
+# /usr/lib/python3.11/__pycache__/operator.cpython-311.pyc matches /usr/lib/python3.11/operator.py
+# code object from '/usr/lib/python3.11/__pycache__/operator.cpython-311.pyc'
+import '_operator' # <class '_frozen_importlib.BuiltinImporter'>
+import 'operator' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097d541d0>
+# /usr/lib/python3.11/__pycache__/reprlib.cpython-311.pyc matches /usr/lib/python3.11/reprlib.py
+# code object from '/usr/lib/python3.11/__pycache__/reprlib.cpython-311.pyc'
+import 'reprlib' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097d54e10>
+import '_collections' # <class '_frozen_importlib.BuiltinImporter'>
+import 'collections' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097d1a410>
+# /usr/lib/python3.11/__pycache__/functools.cpython-311.pyc matches /usr/lib/python3.11/functools.py
+# code object from '/usr/lib/python3.11/__pycache__/functools.cpython-311.pyc'
+# /usr/lib/python3.11/__pycache__/types.cpython-311.pyc matches /usr/lib/python3.11/types.py
+# code object from '/usr/lib/python3.11/__pycache__/types.cpython-311.pyc'
+import 'types' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097d67950>
+import '_functools' # <class '_frozen_importlib.BuiltinImporter'>
+import 'functools' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097d34790>
+import 'contextlib' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097d19f10>
+import '_virtualenv' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097d18c50>
+Processing .pth file: '/home/kali/Documents/COP 290 subtask 1/venv/lib/python3.11/site-packages/distutils-precedence.pth'
+# /home/kali/Documents/COP 290 subtask 1/venv/lib/python3.11/site-packages/_distutils_hack/__pycache__/__init__.cpython-311.pyc matches /home/kali/Documents/COP 290 subtask 1/venv/lib/python3.11/site-packages/_distutils_hack/__init__.py
+# code object from '/home/kali/Documents/COP 290 subtask 1/venv/lib/python3.11/site-packages/_distutils_hack/__pycache__/__init__.cpython-311.pyc'
+import '_distutils_hack' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097d82590>
+Processing user site-packages
+Processing global site-packages
+Adding directory: '/home/kali/Documents/COP 290 subtask 1/venv/lib/python3.11/site-packages'
+Processing .pth file: '/home/kali/Documents/COP 290 subtask 1/venv/lib/python3.11/site-packages/_virtualenv.pth'
+Processing .pth file: '/home/kali/Documents/COP 290 subtask 1/venv/lib/python3.11/site-packages/distutils-precedence.pth'
+# /usr/lib/python3.11/__pycache__/sitecustomize.cpython-311.pyc matches /usr/lib/python3.11/sitecustomize.py
+# code object from '/usr/lib/python3.11/__pycache__/sitecustomize.cpython-311.pyc'
+import 'sitecustomize' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097d83790>
+import 'site' # <class '_frozen_importlib.FrozenImporter'>
+# extension module 'readline' loaded from '/usr/lib/python3.11/lib-dynload/readline.cpython-311-x86_64-linux-gnu.so'
+# extension module 'readline' executed from '/usr/lib/python3.11/lib-dynload/readline.cpython-311-x86_64-linux-gnu.so'
+import 'readline' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7f2097d83150>
+# /usr/lib/python3.11/__pycache__/rlcompleter.cpython-311.pyc matches /usr/lib/python3.11/rlcompleter.py
+# code object from '/usr/lib/python3.11/__pycache__/rlcompleter.cpython-311.pyc'
+import 'atexit' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python3.11/__pycache__/inspect.cpython-311.pyc matches /usr/lib/python3.11/inspect.py
+# code object from '/usr/lib/python3.11/__pycache__/inspect.cpython-311.pyc'
+# /usr/lib/python3.11/__pycache__/ast.cpython-311.pyc matches /usr/lib/python3.11/ast.py
+# code object from '/usr/lib/python3.11/__pycache__/ast.cpython-311.pyc'
+import '_ast' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python3.11/__pycache__/enum.cpython-311.pyc matches /usr/lib/python3.11/enum.py
+# code object from '/usr/lib/python3.11/__pycache__/enum.cpython-311.pyc'
+import 'enum' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097de59d0>
+import 'ast' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097da8750>
+# /usr/lib/python3.11/__pycache__/dis.cpython-311.pyc matches /usr/lib/python3.11/dis.py
+# code object from '/usr/lib/python3.11/__pycache__/dis.cpython-311.pyc'
+# /usr/lib/python3.11/__pycache__/opcode.cpython-311.pyc matches /usr/lib/python3.11/opcode.py
+# code object from '/usr/lib/python3.11/__pycache__/opcode.cpython-311.pyc'
+import '_opcode' # <class '_frozen_importlib.BuiltinImporter'>
+import 'opcode' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097b7e710>
+import 'dis' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097dab010>
+# /usr/lib/python3.11/collections/__pycache__/abc.cpython-311.pyc matches /usr/lib/python3.11/collections/abc.py
+# code object from '/usr/lib/python3.11/collections/__pycache__/abc.cpython-311.pyc'
+import 'collections.abc' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097b7e310>
+# /usr/lib/python3.11/importlib/__pycache__/__init__.cpython-311.pyc matches /usr/lib/python3.11/importlib/__init__.py
+# code object from '/usr/lib/python3.11/importlib/__pycache__/__init__.cpython-311.pyc'
+# /usr/lib/python3.11/__pycache__/warnings.cpython-311.pyc matches /usr/lib/python3.11/warnings.py
+# code object from '/usr/lib/python3.11/__pycache__/warnings.cpython-311.pyc'
+import 'warnings' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097b85d90>
+import 'importlib' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097b86710>
+import 'importlib.machinery' # <class '_frozen_importlib.FrozenImporter'>
+# /usr/lib/python3.11/__pycache__/linecache.cpython-311.pyc matches /usr/lib/python3.11/linecache.py
+# code object from '/usr/lib/python3.11/__pycache__/linecache.cpython-311.pyc'
+# /usr/lib/python3.11/__pycache__/tokenize.cpython-311.pyc matches /usr/lib/python3.11/tokenize.py
+# code object from '/usr/lib/python3.11/__pycache__/tokenize.cpython-311.pyc'
+# /usr/lib/python3.11/re/__pycache__/__init__.cpython-311.pyc matches /usr/lib/python3.11/re/__init__.py
+# code object from '/usr/lib/python3.11/re/__pycache__/__init__.cpython-311.pyc'
+# /usr/lib/python3.11/re/__pycache__/_compiler.cpython-311.pyc matches /usr/lib/python3.11/re/_compiler.py
+# code object from '/usr/lib/python3.11/re/__pycache__/_compiler.cpython-311.pyc'
+import '_sre' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python3.11/re/__pycache__/_parser.cpython-311.pyc matches /usr/lib/python3.11/re/_parser.py
+# code object from '/usr/lib/python3.11/re/__pycache__/_parser.cpython-311.pyc'
+# /usr/lib/python3.11/re/__pycache__/_constants.cpython-311.pyc matches /usr/lib/python3.11/re/_constants.py
+# code object from '/usr/lib/python3.11/re/__pycache__/_constants.cpython-311.pyc'
+import 're._constants' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097bb66d0>
+import 're._parser' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097b9f790>
+# /usr/lib/python3.11/re/__pycache__/_casefix.cpython-311.pyc matches /usr/lib/python3.11/re/_casefix.py
+# code object from '/usr/lib/python3.11/re/__pycache__/_casefix.cpython-311.pyc'
+import 're._casefix' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097bc1fd0>
+import 're._compiler' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097b9c3d0>
+# /usr/lib/python3.11/__pycache__/copyreg.cpython-311.pyc matches /usr/lib/python3.11/copyreg.py
+# code object from '/usr/lib/python3.11/__pycache__/copyreg.cpython-311.pyc'
+import 'copyreg' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097bc33d0>
+import 're' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097b9a6d0>
+# /usr/lib/python3.11/__pycache__/token.cpython-311.pyc matches /usr/lib/python3.11/token.py
+# code object from '/usr/lib/python3.11/__pycache__/token.cpython-311.pyc'
+import 'token' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097b9a410>
+import 'tokenize' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097b8b4d0>
+import 'linecache' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097b86c10>
+import 'inspect' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097d8c150>
+import 'rlcompleter' # <_frozen_importlib_external.SourceFileLoader object at 0x7f2097d67890>
+Python 3.11.6 (main, Oct  8 2023, 05:06:43) [GCC 13.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+zsh: suspended  python -v
+                                                                                                                                                                       
+┌──(venv)─(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ deactivate
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ python3.10.10 --version
+python3.10.10: command not found
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ pyenv install 3.10.10  
+Command 'pyenv' not found, did you mean:
+  command 'p7env' from deb libnss3-tools
+Try: sudo apt install <deb name>
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ virtualenv venv         
+created virtual environment CPython3.11.6.final.0-64 in 90ms
+  creator CPython3Posix(dest=/home/kali/Documents/COP 290 subtask 1/venv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/kali/.local/share/virtualenv)
+    added seed packages: pip==23.3, setuptools==68.1.2, wheel==0.41.2
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ source venv/bin/activate
+                                                                                                                                                                       
+┌──(venv)─(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+Looking in indexes: https://download.pytorch.org/whl/cpu
+Collecting torch
+  Downloading https://download.pytorch.org/whl/cpu/torch-2.2.1%2Bcpu-cp311-cp311-linux_x86_64.whl (186.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 186.8/186.8 MB 6.7 MB/s eta 0:00:00
+Collecting torchvision
+  Downloading https://download.pytorch.org/whl/cpu/torchvision-0.17.1%2Bcpu-cp311-cp311-linux_x86_64.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 4.2 MB/s eta 0:00:00
+Collecting torchaudio
+  Downloading https://download.pytorch.org/whl/cpu/torchaudio-2.2.1%2Bcpu-cp311-cp311-linux_x86_64.whl (1.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 7.8 MB/s eta 0:00:00
+Collecting filelock (from torch)
+  Downloading https://download.pytorch.org/whl/filelock-3.9.0-py3-none-any.whl (9.7 kB)
+Collecting typing-extensions>=4.8.0 (from torch)
+  Downloading https://download.pytorch.org/whl/typing_extensions-4.8.0-py3-none-any.whl (31 kB)
+Collecting sympy (from torch)
+  Downloading https://download.pytorch.org/whl/sympy-1.12-py3-none-any.whl (5.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.7/5.7 MB 6.6 MB/s eta 0:00:00
+Collecting networkx (from torch)
+  Downloading https://download.pytorch.org/whl/networkx-3.2.1-py3-none-any.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 9.0 MB/s eta 0:00:00
+Collecting jinja2 (from torch)
+  Downloading https://download.pytorch.org/whl/Jinja2-3.1.2-py3-none-any.whl (133 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 kB 5.4 MB/s eta 0:00:00
+Collecting fsspec (from torch)
+  Downloading https://download.pytorch.org/whl/fsspec-2023.4.0-py3-none-any.whl (153 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 154.0/154.0 kB 7.6 MB/s eta 0:00:00
+Collecting numpy (from torchvision)
+  Downloading https://download.pytorch.org/whl/numpy-1.26.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.3/18.3 MB 5.9 MB/s eta 0:00:00
+Collecting pillow!=8.3.*,>=5.3.0 (from torchvision)
+  Downloading https://download.pytorch.org/whl/pillow-10.2.0-cp311-cp311-manylinux_2_28_x86_64.whl (4.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 5.1 MB/s eta 0:00:00
+Collecting MarkupSafe>=2.0 (from jinja2->torch)
+  Downloading https://download.pytorch.org/whl/MarkupSafe-2.1.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (28 kB)
+Collecting mpmath>=0.19 (from sympy->torch)
+  Downloading https://download.pytorch.org/whl/mpmath-1.3.0-py3-none-any.whl (536 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 3.2 MB/s eta 0:00:00
+Installing collected packages: mpmath, typing-extensions, sympy, pillow, numpy, networkx, MarkupSafe, fsspec, filelock, jinja2, torch, torchvision, torchaudio
+Successfully installed MarkupSafe-2.1.3 filelock-3.9.0 fsspec-2023.4.0 jinja2-3.1.2 mpmath-1.3.0 networkx-3.2.1 numpy-1.26.3 pillow-10.2.0 sympy-1.12 torch-2.2.1+cpu torchaudio-2.2.1+cpu torchvision-0.17.1+cpu typing-extensions-4.8.0
+                                                                                                                                                                       
+┌──(venv)─(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ deactivate
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: https://download.pytorch.org/whl/cpu
+Collecting torch
+  Using cached https://download.pytorch.org/whl/cpu/torch-2.2.1%2Bcpu-cp311-cp311-linux_x86_64.whl (186.8 MB)
+Collecting torchvision
+  Using cached https://download.pytorch.org/whl/cpu/torchvision-0.17.1%2Bcpu-cp311-cp311-linux_x86_64.whl (1.6 MB)
+Collecting torchaudio
+  Using cached https://download.pytorch.org/whl/cpu/torchaudio-2.2.1%2Bcpu-cp311-cp311-linux_x86_64.whl (1.7 MB)
+Requirement already satisfied: filelock in /usr/lib/python3/dist-packages (from torch) (3.12.4)
+Collecting typing-extensions>=4.8.0 (from torch)
+  Using cached https://download.pytorch.org/whl/typing_extensions-4.8.0-py3-none-any.whl (31 kB)
+Requirement already satisfied: sympy in /usr/lib/python3/dist-packages (from torch) (1.12)
+Requirement already satisfied: networkx in /usr/lib/python3/dist-packages (from torch) (2.8.8)
+Requirement already satisfied: jinja2 in /usr/lib/python3/dist-packages (from torch) (3.1.2)
+Collecting fsspec (from torch)
+  Using cached https://download.pytorch.org/whl/fsspec-2023.4.0-py3-none-any.whl (153 kB)
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from torchvision) (1.24.2)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in /usr/lib/python3/dist-packages (from torchvision) (10.0.0)
+Installing collected packages: typing-extensions, fsspec, torch, torchvision, torchaudio
+  WARNING: The scripts convert-caffe2-to-onnx, convert-onnx-to-caffe2 and torchrun are installed in '/home/kali/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.                                                    
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.                                                                                                                                                                
+fastapi 0.101.0 requires starlette<0.28.0,>=0.27.0, but you have starlette 0.31.1 which is incompatible.                                                               
+Successfully installed fsspec-2023.4.0 torch-2.2.1+cpu torchaudio-2.2.1+cpu torchvision-0.17.1+cpu typing-extensions-4.8.0                                             
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: https://download.pytorch.org/whl/cpu
+Requirement already satisfied: torch in /home/kali/.local/lib/python3.11/site-packages (2.2.1+cpu)
+Requirement already satisfied: torchvision in /home/kali/.local/lib/python3.11/site-packages (0.17.1+cpu)
+Requirement already satisfied: torchaudio in /home/kali/.local/lib/python3.11/site-packages (2.2.1+cpu)
+Requirement already satisfied: filelock in /usr/lib/python3/dist-packages (from torch) (3.12.4)
+Requirement already satisfied: typing-extensions>=4.8.0 in /home/kali/.local/lib/python3.11/site-packages (from torch) (4.8.0)
+Requirement already satisfied: sympy in /usr/lib/python3/dist-packages (from torch) (1.12)
+Requirement already satisfied: networkx in /usr/lib/python3/dist-packages (from torch) (2.8.8)
+Requirement already satisfied: jinja2 in /usr/lib/python3/dist-packages (from torch) (3.1.2)
+Requirement already satisfied: fsspec in /home/kali/.local/lib/python3.11/site-packages (from torch) (2023.4.0)
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from torchvision) (1.24.2)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in /usr/lib/python3/dist-packages (from torchvision) (10.0.0)
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ sudo apt update                                                                           
+[sudo] password for kali: 
+Get:1 https://packages.microsoft.com/repos/code stable InRelease [3590 B]
+Get:2 https://packages.microsoft.com/repos/code stable/main armhf Packages [17.7 kB]
+Get:3 https://packages.microsoft.com/repos/code stable/main arm64 Packages [17.7 kB]
+Get:4 https://packages.microsoft.com/repos/code stable/main amd64 Packages [17.7 kB]
+Get:5 http://kali.download/kali kali-rolling InRelease [41.5 kB]
+Get:6 http://kali.download/kali kali-rolling/main i386 Packages [19.5 MB]
+Get:7 http://kali.download/kali kali-rolling/main amd64 Packages [19.9 MB]
+Get:8 http://kali.download/kali kali-rolling/main amd64 Contents (deb) [47.3 MB]
+Get:9 http://kali.download/kali kali-rolling/main i386 Contents (deb) [45.3 MB]                                                                                       
+Get:10 http://kali.download/kali kali-rolling/contrib amd64 Packages [121 kB]                                                                                         
+Get:11 http://kali.download/kali kali-rolling/contrib i386 Packages [104 kB]                                                                                          
+Get:12 http://kali.download/kali kali-rolling/contrib i386 Contents (deb) [179 kB]                                                                                    
+Get:13 http://kali.download/kali kali-rolling/contrib amd64 Contents (deb) [262 kB]                                                                                   
+Get:14 http://kali.download/kali kali-rolling/non-free i386 Packages [149 kB]                                                                                         
+Get:15 http://kali.download/kali kali-rolling/non-free amd64 Packages [194 kB]                                                                                        
+Get:16 http://kali.download/kali kali-rolling/non-free i386 Contents (deb) [835 kB]                                                                                   
+Get:17 http://kali.download/kali kali-rolling/non-free amd64 Contents (deb) [885 kB]                                                                                  
+Get:18 http://kali.download/kali kali-rolling/non-free-firmware amd64 Packages [33.0 kB]                                                                              
+Get:19 http://kali.download/kali kali-rolling/non-free-firmware i386 Packages [32.5 kB]                                                                               
+Get:20 http://kali.download/kali kali-rolling/non-free-firmware i386 Contents (deb) [16.8 kB]                                                                         
+Fetched 135 MB in 15s (8808 kB/s)                                                                                                                                     
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+1896 packages can be upgraded. Run 'apt list --upgradable' to see them.
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ sudo apt install ffmpeg       
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+ffmpeg is already the newest version (7:6.1.1-1).
+The following packages were automatically installed and are no longer required:
+  libnode108 node-acorn node-cjs-module-lexer node-undici node-xtend nodejs nodejs-doc
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 1896 not upgraded.
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ ffmpeg --version
+ffmpeg version 6.1.1-1 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Debian 13.2.0-9)
+  configuration: --prefix=/usr --extra-version=1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libharfbuzz --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable-libjxl --enable-pocketsphinx --enable-librsvg --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libsvtav1 --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+Unrecognized option '-version'.
+Error splitting the argument list: Option not found                                                                                                                    
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ ffmpeg -version 
+ffmpeg version 6.1.1-1 Copyright (c) 2000-2023 the FFmpeg developers
+built with gcc 13 (Debian 13.2.0-9)
+configuration: --prefix=/usr --extra-version=1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libharfbuzz --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable-libjxl --enable-pocketsphinx --enable-librsvg --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libsvtav1 --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+libavutil      58. 29.100 / 58. 29.100
+libavcodec     60. 31.102 / 60. 31.102
+libavformat    60. 16.100 / 60. 16.100
+libavdevice    60.  3.100 / 60.  3.100
+libavfilter     9. 12.100 /  9. 12.100
+libswscale      7.  5.100 /  7.  5.100
+libswresample   4. 12.100 /  4. 12.100
+libpostproc    57.  3.100 / 57.  3.100
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ pip install openai-whisper                                                                
+Defaulting to user installation because normal site-packages is not writeable
+Collecting openai-whisper
+  Downloading openai-whisper-20231117.tar.gz (798 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 798.6/798.6 kB 3.2 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Installing backend dependencies ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting triton<3,>=2.0.0 (from openai-whisper)
+  Downloading triton-2.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.4 kB)
+Requirement already satisfied: numba in /usr/lib/python3/dist-packages (from openai-whisper) (0.57.1)
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from openai-whisper) (1.24.2)
+Requirement already satisfied: torch in /home/kali/.local/lib/python3.11/site-packages (from openai-whisper) (2.2.1+cpu)
+Requirement already satisfied: tqdm in /usr/lib/python3/dist-packages (from openai-whisper) (4.64.1)
+Requirement already satisfied: more-itertools in /usr/lib/python3/dist-packages (from openai-whisper) (10.1.0)
+Collecting tiktoken (from openai-whisper)
+  Downloading tiktoken-0.6.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+Requirement already satisfied: filelock in /usr/lib/python3/dist-packages (from triton<3,>=2.0.0->openai-whisper) (3.12.4)
+Collecting regex>=2022.1.18 (from tiktoken->openai-whisper)
+  Downloading regex-2023.12.25-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.9/40.9 kB 4.6 MB/s eta 0:00:00
+Requirement already satisfied: requests>=2.26.0 in /usr/lib/python3/dist-packages (from tiktoken->openai-whisper) (2.31.0)
+Requirement already satisfied: typing-extensions>=4.8.0 in /home/kali/.local/lib/python3.11/site-packages (from torch->openai-whisper) (4.8.0)
+Requirement already satisfied: sympy in /usr/lib/python3/dist-packages (from torch->openai-whisper) (1.12)
+Requirement already satisfied: networkx in /usr/lib/python3/dist-packages (from torch->openai-whisper) (2.8.8)
+Requirement already satisfied: jinja2 in /usr/lib/python3/dist-packages (from torch->openai-whisper) (3.1.2)
+Requirement already satisfied: fsspec in /home/kali/.local/lib/python3.11/site-packages (from torch->openai-whisper) (2023.4.0)
+Downloading triton-2.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (167.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 167.9/167.9 MB 3.6 MB/s eta 0:00:00
+Downloading tiktoken-0.6.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 4.2 MB/s eta 0:00:00
+Downloading regex-2023.12.25-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (785 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 785.1/785.1 kB 4.5 MB/s eta 0:00:00
+Building wheels for collected packages: openai-whisper
+  Building wheel for openai-whisper (pyproject.toml) ... done
+  Created wheel for openai-whisper: filename=openai_whisper-20231117-py3-none-any.whl size=801356 sha256=40c0ee1561923493c0b0ae1f22f1022d31bebc63904a5f5b7df27d2eb25605b8
+  Stored in directory: /home/kali/.cache/pip/wheels/55/5d/42/c296ab046d52caa0adc0e3f159e98f011b3994a022d6282105
+Successfully built openai-whisper
+Installing collected packages: triton, regex, tiktoken, openai-whisper
+  WARNING: The script whisper is installed in '/home/kali/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.                                                    
+Successfully installed openai-whisper-20231117 regex-2023.12.25 tiktoken-0.6.0 triton-2.2.0                                                                            
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ whisper sample.wav 
+Command 'whisper' not found, did you mean:
+  command 'whipper' from deb whipper
+Try: sudo apt install <deb name>
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ whereis whisper   
+whisper:
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$                
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ ~/.zshrc
+zsh: permission denied: /home/kali/.zshrc
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ sudo ~/.zshrc
+sudo: /home/kali/.zshrc: command not found
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ ~/.zshrc     
+zsh: permission denied: /home/kali/.zshrc
+                                                                                                                                                                       
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ bash
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ ~/.bashrc                                                                                                                                                          
+bash: /home/kali/.bashrc: Permission denied
+
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ home/kali/.local/bin/whisper sample.wav                                                                                                                            
+bash: home/kali/.local/bin/whisper: No such file or directory
+
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ /home/kali/.local/bin/whisper sample.wav 
+100%|███████████████████████████████████████| 461M/461M [02:13<00:00, 3.62MiB/s]
+/home/kali/.local/lib/python3.11/site-packages/whisper/transcribe.py:115: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+Detecting language using up to the first 30 seconds. Use `--language` to specify the language
+Detected language: English
+[00:00.000 --> 00:03.600]  In this lecture we will be studying about ambiguous grammar.
+[00:03.600 --> 00:06.120]  So what do we mean by ambiguous grammar?
+[00:06.120 --> 00:12.560]  A grammar is said to be ambiguous if there exist two or more derivation tree for a string
+[00:12.560 --> 00:13.720]  omega.
+[00:13.720 --> 00:16.520]  That means two or more left derivation trees.
+[00:16.520 --> 00:21.880]  Okay, so in the last lecture we have studied about derivation trees and we saw how we can
+[00:21.880 --> 00:26.120]  draw derivation trees for the strings of a certain grammar.
+[00:26.120 --> 00:30.760]  So let's say that we have a grammar given and there is a string omega that can be generated
+[00:30.760 --> 00:32.600]  from this grammar.
+[00:32.600 --> 00:39.800]  And if this string omega can be derived from two or more left derivation trees then that
+[00:39.800 --> 00:42.120]  grammar is said to be ambiguous.
+[00:42.120 --> 00:46.200]  So when we mean two or more derivation trees we should keep in mind that they should be
+[00:46.200 --> 00:47.960]  both left derivation trees.
+[00:47.960 --> 00:53.760]  It's not that you form one using a left derivation tree and another using a right derivation tree
+[00:53.760 --> 00:54.760]  and that is ambiguous.
+[00:54.760 --> 00:55.960]  No, that is not the case.
+[00:55.960 --> 01:02.480]  It is only when it can be formed using two or more left derivation trees then it is said
+[01:02.480 --> 01:04.160]  to be an ambiguous grammar.
+[01:04.160 --> 01:09.160]  Okay, so now let's take a simple example to understand this in a better way.
+[01:09.160 --> 01:10.880]  So here we have an example.
+[01:10.880 --> 01:13.320]  We have a grammar G which is given like this.
+[01:13.320 --> 01:21.160]  It has S as a non-terminal symbol or the variable and it has terminal symbols A plus B plus
+[01:21.160 --> 01:23.680]  and this multiplication sign.
+[01:23.680 --> 01:28.120]  And we have B as the production rule and S is the start symbol.
+[01:28.120 --> 01:30.400]  And the production rule is given like this.
+[01:30.400 --> 01:37.680]  S gives S plus S and S can also give S into S and it can also give A and it can also give
+[01:37.680 --> 01:38.680]  B.
+[01:38.680 --> 01:44.400]  Now, we want to generate the string A plus A into B. This is a string we want to generate
+[01:44.400 --> 01:47.720]  and let's see in how many ways we can generate this string.
+[01:47.720 --> 01:51.560]  Okay, so let's start with the start symbol which is S.
+[01:51.560 --> 01:54.600]  And I will say that S gives S plus S.
+[01:54.600 --> 01:56.600]  I will start from this production.
+[01:56.600 --> 01:59.680]  S gives S plus S.
+[01:59.680 --> 02:07.240]  Okay, now I need to get A plus A into B. Now this A is what I need to get and I am forming
+[02:07.240 --> 02:09.040]  the left derivation tree for this.
+[02:09.040 --> 02:11.160]  So this is a left derivation tree.
+[02:11.160 --> 02:14.520]  So we have to start from the left most symbol which is S.
+[02:14.520 --> 02:20.600]  So here this S I will replace it with A because we have a production which says S gives A.
+[02:20.600 --> 02:26.320]  So this S will be replaced by an A and the other S let me just write it down as it is.
+[02:26.320 --> 02:32.160]  And now I got this A plus S and now this A let me write it down as it is plus and I have
+[02:32.160 --> 02:38.240]  another S over here and I need A into B. Now for that let me further expand this S using
+[02:38.240 --> 02:42.640]  the production rule which says that S gives S into S.
+[02:42.640 --> 02:48.040]  So this S will be expanded as S into S.
+[02:48.040 --> 02:58.120]  And now I will replace this S by A because we saw that S gives A and I need A in my string.
+[02:58.120 --> 03:04.960]  So this A I will write down as it is and this S I will replace it with A and into S as it
+[03:04.960 --> 03:05.960]  is.
+[03:05.960 --> 03:09.760]  And now this final S I will replace it with B now.
+[03:09.760 --> 03:14.360]  I can do that because the production rule says S can give B.
+[03:14.360 --> 03:21.840]  So this A will be as it is this A will be as it is into this S will be replaced by B.
+[03:21.840 --> 03:27.920]  Okay so now I am getting the string A plus A into B which is a string I wanted to generate.
+[03:27.920 --> 03:31.760]  Okay so this is one way I can generate this string.
+[03:31.760 --> 03:34.360]  Now let's see another way in which we can generate.
+[03:34.360 --> 03:38.960]  I will again start with the start symbol and now I will start with the production which
+[03:38.960 --> 03:47.280]  says S gives S into S this one S into S.
+[03:47.280 --> 03:54.320]  Okay so this is again a left derivation so we should start with the leftmost symbol.
+[03:54.320 --> 04:00.760]  So here this S over here I will replace it with S plus S.
+[04:00.760 --> 04:07.560]  S gives S plus S so this S I will replace it with S plus S and this into S I write it
+[04:07.560 --> 04:10.160]  down as it is.
+[04:10.160 --> 04:14.440]  Okay so this is what we are getting.
+[04:14.440 --> 04:18.920]  Now why am I doing this this is because I want to get this string and we see that there
+[04:18.920 --> 04:21.920]  is a plus symbol in between and we were having into.
+[04:21.920 --> 04:25.040]  So if I do this I can get the symbol plus.
+[04:25.040 --> 04:27.280]  Now I am having S plus S into S.
+[04:27.280 --> 04:32.680]  Now this S over here I will replace it with A because S can give A.
+[04:32.680 --> 04:42.200]  So A plus and this S into S let me just write them as they are and now this S over here
+[04:42.200 --> 04:53.000]  let me replace it with A again A plus A into S and then this final S I will replace it
+[04:53.000 --> 04:55.480]  with B because S can give B.
+[04:55.480 --> 05:01.000]  So A plus A into B.
+[05:01.400 --> 05:06.360]  Now I am getting by string A plus A into B which is the string I wanted to generate.
+[05:06.360 --> 05:13.600]  So we see that this string A plus A into B were generated using two derivation trees.
+[05:13.600 --> 05:18.120]  First I chose the production rule S plus S and I could get the string and even when
+[05:18.120 --> 05:24.480]  I chose the string S into S I could get this string and we have seen that in both the cases
+[05:24.480 --> 05:26.800]  we use the left derivation tree.
+[05:26.800 --> 05:32.760]  So using the left derivation tree we were able to derive the string in two ways.
+[05:32.760 --> 05:37.120]  Thus we can say that this grammar is ambiguous.
+[05:37.120 --> 05:41.240]  So this is the example of an ambiguous grammar and I hope it was clear to you.
+[05:41.240 --> 05:42.960]  So thank you for watching and see you in the next one.
+
+┌──(kali㉿Kali)-[~/Documents/COP 290 subtask 1]
+└─$ 
